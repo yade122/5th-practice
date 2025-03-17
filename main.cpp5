@@ -1,0 +1,28 @@
+#include <iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+    int arr[] ={5,2,7,4,8};
+    int i,j,aux;
+    for(i=0;i<=5;i++)
+    {
+        for(j=0; j<=5;j++)
+        {
+             if(arr[j]>arr[j+1])
+             {
+                 aux=arr[j];
+                arr[j]=arr[j+1];
+              arr[j+1]=aux;
+             }
+        }
+    }
+   cout<<"element of the array is:\n";
+   for(i=0;i<=5;i++)
+   {
+       cout<<arr[i]<<",";
+   }
+
+    return 0;
+}
